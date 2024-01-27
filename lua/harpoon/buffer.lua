@@ -66,10 +66,10 @@ function M.setup_autocmds_and_keymaps(bufnr)
         buffer = bufnr,
         callback = function()
             require("harpoon").ui:save()
-            vim.schedule(function()
-                require("harpoon").logger:log("toggle by BufWriteCmd")
-                require("harpoon").ui:toggle_quick_menu()
-            end)
+            --vim.schedule(function()
+             --   require("harpoon").logger:log("toggle by BufWriteCmd")
+             --   require("harpoon").ui:toggle_quick_menu()
+            --end)
         end,
     })
 
